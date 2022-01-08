@@ -8,7 +8,7 @@ services:
     - MONGO_DB_USERNAME=dasoju
     - MONGO_DB_PASSWORD=96321
     ports:
-    - 8200:8080
+    - 8400:8080
     networks:
     - flipkartnetwork
     depends_on:
@@ -22,10 +22,8 @@ services:
     - mongodb:/data/db
     networks:
     - flipkartnetwork
-
 volumes:
   mongodb:
     driver: local
-
 networks:
   flipkartnetwork:
