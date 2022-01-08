@@ -11,6 +11,8 @@ services:
     - 8200:8080
     networks:
     - flipkartnetwork
+    depends_on:
+      - mongo
   mongo:
     image: mongo
     environment:
